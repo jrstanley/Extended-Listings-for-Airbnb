@@ -1,0 +1,29 @@
+{
+  "name": "Airbnb: Crime and Photos",
+  "version": "1.0.0",
+  "description": "View crime stats and nearby photos in Airbnb listings.",
+  "permissions": [
+    "https://api.spotcrime.com/*",
+    "https://api.flickr.com/*"
+  ],
+  "icons": {
+    "48" : "48.png",
+    "128" : "128.png"
+  },
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": [
+        "https://www.airbnb.com/rooms/*",
+        "https://www.airbnb.co.uk/rooms/*",
+        "https://www.airbnb.com.sg/rooms/*",
+        "https://www.airbnb.com.au/rooms/*",
+        "https://www.airbnb.co.nz/rooms/*",
+        "https://www.airbnb.ca/rooms/*",
+        "https://www.airbnb.ie/rooms/*"
+      ],
+      "js" : ["contentscript.js"]
+    }
+  ],
+  "manifest_version": 2
+}
