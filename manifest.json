@@ -1,7 +1,7 @@
 {
-  "name": "Airbnb: Crime and Photos",
+  "name": "Extended Listings for Airbnb (Crime and Photos)",
   "version": "1.0.0",
-  "description": "View crime stats and nearby photos in Airbnb listings.",
+  "description": "View crime statistics and nearby photos in Airbnb listings.",
   "permissions": [
     "https://api.spotcrime.com/*",
     "https://api.flickr.com/*"
