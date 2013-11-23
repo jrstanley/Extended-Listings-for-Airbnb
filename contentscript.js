@@ -66,7 +66,7 @@ function spotcrime(data) {
 
     var days_crime_free = Math.floor((Date.now() - Date.parse(data.crimes[0].date))/86400000);
     var last_crime_date = new Date(data.crimes[data.crimes.length-1].date).toDateString();
-    crime_div.innerHTML = '<p><strong>No crimes have been reported in this area witin the last ' + days_crime_free + ' days.</strong></p>' + '<p>A total of ' + data.crimes.length + ' reported crimes have been found in this area dating back to ' + last_crime_date + ', which are broken down as follows;</p>';
+    crime_div.innerHTML = '<p><strong>No crimes have been reported in this area within the last ' + days_crime_free + ' days.</strong></p>' + '<p>A total of ' + data.crimes.length + ' reported crimes have been found in this area dating back to ' + last_crime_date + ', which are broken down as follows;</p>';
    
     var crime_list = createElementWithAttrs('ul', {id: 'crime-list', class: 'unstyled button cleafix icon-blue'});
     for(var i=0, l=keys.length; i<l; i++){
