@@ -79,7 +79,7 @@ function spotcrime(data) {
   }
   
   crime_div.appendChild(createElementWithAttrs('p', {class: 'text-muted'},
-    {innerHTML: 'Crime data provided by <a href="http://www.spotcrime.com">SpotCrime</a>.'}
+    {innerHTML: 'Crime data provided by <a href="https://www.spotcrime.com">SpotCrime</a>.'}
   ));
 
   insertMenuItem(crime_div, 'crimes', 'Crime');
@@ -90,14 +90,14 @@ function flickr(data){
   if(data && data.photos && data.photos.total > 0){
     for(var i=0, l=Math.min(32, data.photos.photo.length); i<l; i++){
       var p = data.photos.photo[i];
-      html += '<a href="http://www.flickr.com/photos/'+p.owner+'/'+p.id+'" target="_blank"><img style="margin: 0 8px 8px 0;" width="145" class="media-photo" src="http://farm'+p.farm+'.staticflickr.com/'+p.server+'/'+p.id+'_'+p.secret+'_q.jpg" alt="'+p.title+'" /></a>';
+      html += '<a href="https://www.flickr.com/photos/'+p.owner+'/'+p.id+'" target="_blank"><img style="margin: 0 8px 8px 0;" width="145" class="media-photo" src="http://farm'+p.farm+'.staticflickr.com/'+p.server+'/'+p.id+'_'+p.secret+'_q.jpg" alt="'+p.title+'" /></a>';
     }
   } else if (data && data.photos) {
     html = '<p>No nearby photos could be found for this area.</p>';
   } else {
     html = '<p>Flickr could not be contacted to find photos at this time.</p>';
   }
-  html += '<p class="text-muted">Photos from <a href="http://www.flickr.com">flickr</a>.</p>';
+  html += '<p class="text-muted">Photos from <a href="https://www.flickr.com">flickr</a>.</p>';
   insertMenuItem(createElementWithAttrs('div', null, {innerHTML: html}), 'photosnearby', 'Nearby Photos');
 }
 
