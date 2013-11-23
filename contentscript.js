@@ -90,7 +90,7 @@ function flickr(data){
   if(data && data.photos && data.photos.total > 0){
     for(var i=0, l=Math.min(32, data.photos.photo.length); i<l; i++){
       var p = data.photos.photo[i];
-      html += '<a href="https://www.flickr.com/photos/'+p.owner+'/'+p.id+'" target="_blank"><img style="margin: 0 8px 8px 0;" width="145" class="media-photo" src="http://farm'+p.farm+'.staticflickr.com/'+p.server+'/'+p.id+'_'+p.secret+'_q.jpg" alt="'+p.title+'" /></a>';
+      html += '<a href="https://www.flickr.com/photos/'+p.owner+'/'+p.id+'" target="_blank"><img style="margin: 0 8px 8px 0;" width="145" class="media-photo" src="https://farm'+p.farm+'.staticflickr.com/'+p.server+'/'+p.id+'_'+p.secret+'_q.jpg" alt="'+p.title+'" /></a>';
     }
   } else if (data && data.photos) {
     html = '<p>No nearby photos could be found for this area.</p>';
