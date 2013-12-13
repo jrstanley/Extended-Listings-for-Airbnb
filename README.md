@@ -1,6 +1,9 @@
 #Extended Listings for Airbnb
 Extended Listings for Airbnb is a Chrome extension to add crime data and nearby photos to Airbnb listings.
 
+##Demo
+You can view the extension in-action by downloading a version of the extension [from the Chrome Web Store](https://chrome.google.com/webstore/detail/crime-stats-and-photos-in/maokdkhncjmdmnloddgiokhjfckhbmmd/).
+
 ##Use
 Extended Listings for Airbnb makes use of Flickr and SpotCrime APIs. You should update `contentscript.js` with your own API keys. 
 
